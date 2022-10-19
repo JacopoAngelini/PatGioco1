@@ -17,7 +17,7 @@ var ImgSource = [
   "http://img9.uploadhouse.com/fileuploads/17699/176992568b759acd78f7cbe98b6e4a7baa90e717.png",
   "http://img9.uploadhouse.com/fileuploads/17699/176992554c2ca340cc2ea8c0606ecd320824756e.png"
 ];
-
+console.log('it works');
 function RandomFunction(MaxValue, MinValue) {
 		return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
 	}
