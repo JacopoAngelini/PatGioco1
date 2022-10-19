@@ -56,6 +56,7 @@ function ResetGame() {
 	return false;
 }
 
+
 function OpenCard() {
 	var id = $(this).attr("id");
 
@@ -94,7 +95,12 @@ function OpenCard() {
 		$("#counter").html("" + Counter);
 
 		if (ImgFound == ImgSource.length) {
-			$("#counter").prepend('<span id="success">SEI RIUSCITA IN </span>');
+      var Penality = Math.floor((Counter - 20)/10);
+      console.log(Penality);
+			$("#counter").prepend('<span id="boxcard">SEI RIUSCITA IN </span>');
+      if (Penality >= 4){
+        $("#boxbuttons").append('<p id="boxcard" class="button" style="margin-top: 1rem;">HAI ACCUMULATO '+ Penality +' PENALITA</p>')
+      }
 		}
 	}
 }
