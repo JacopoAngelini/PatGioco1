@@ -95,7 +95,7 @@ function OpenCard() {
 		$("#counter").html("" + Counter);
 
 		if (ImgFound == ImgSource.length) {
-      var Penality = Math.floor((Counter - 20)/10);
+      var Penality = Math.floor((Counter - 10)/10);
       console.log(Penality);
 			$("#counter").prepend('<span id="boxcard">SEI RIUSCITA IN </span>');
       $("#boxbuttons").append('<p id="boxcard" class="button" style="margin-top: 1rem;">HAI ACCUMULATO '+ Penality +' PENALITA</p>')
